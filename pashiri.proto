@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+message PashiriInfo {
+    int32 pashiri_index = 1;
+    int32 pashiri_number = 2;
+}
+
+message PashiriTaskInfo {
+    string exchange = 1;
+    string symbol = 2;
+    string base = 3;
+    string quote = 4;
+}
+
+service PashiriManager {
+    rpc AssignTask (PashiriInfo) returns (PashiriTaskInfo) {}
+}
