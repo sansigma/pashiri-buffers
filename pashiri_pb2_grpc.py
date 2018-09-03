@@ -15,7 +15,7 @@ class PashiriManagerStub(object):
       channel: A grpc.Channel.
     """
     self.AssignTask = channel.unary_unary(
-        '/PashiriManager/AssignTask',
+        '/pahiri_buffer.PashiriManager/AssignTask',
         request_serializer=pashiri__pb2.PashiriInfo.SerializeToString,
         response_deserializer=pashiri__pb2.PashiriTaskInfo.FromString,
         )
@@ -42,5 +42,5 @@ def add_PashiriManagerServicer_to_server(servicer, server):
       ),
   }
   generic_handler = grpc.method_handlers_generic_handler(
-      'PashiriManager', rpc_method_handlers)
+      'pahiri_buffer.PashiriManager', rpc_method_handlers)
   server.add_generic_rpc_handlers((generic_handler,))

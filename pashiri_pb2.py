@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='pashiri.proto',
-  package='',
+  package='pahiri_buffer',
   syntax='proto3',
-  serialized_pb=_b('\n\rpashiri.proto\"<\n\x0bPashiriInfo\x12\x15\n\rpashiri_index\x18\x01 \x01(\x05\x12\x16\n\x0epashiri_number\x18\x02 \x01(\x05\"P\n\x0fPashiriTaskInfo\x12\x10\n\x08\x65xchange\x18\x01 \x01(\t\x12\x0e\n\x06symbol\x18\x02 \x01(\t\x12\x0c\n\x04\x62\x61se\x18\x03 \x01(\t\x12\r\n\x05quote\x18\x04 \x01(\t2@\n\x0ePashiriManager\x12.\n\nAssignTask\x12\x0c.PashiriInfo\x1a\x10.PashiriTaskInfo\"\x00\x62\x06proto3')
+  serialized_pb=_b('\n\rpashiri.proto\x12\rpahiri_buffer\"<\n\x0bPashiriInfo\x12\x15\n\rpashiri_index\x18\x01 \x01(\x05\x12\x16\n\x0epashiri_number\x18\x02 \x01(\x05\"P\n\x0fPashiriTaskInfo\x12\x10\n\x08\x65xchange\x18\x01 \x01(\t\x12\x0e\n\x06symbol\x18\x02 \x01(\t\x12\x0c\n\x04\x62\x61se\x18\x03 \x01(\t\x12\r\n\x05quote\x18\x04 \x01(\t2\\\n\x0ePashiriManager\x12J\n\nAssignTask\x12\x1a.pahiri_buffer.PashiriInfo\x1a\x1e.pahiri_buffer.PashiriTaskInfo\"\x00\x62\x06proto3')
 )
 
 
@@ -27,20 +27,20 @@ DESCRIPTOR = _descriptor.FileDescriptor(
 
 _PASHIRIINFO = _descriptor.Descriptor(
   name='PashiriInfo',
-  full_name='PashiriInfo',
+  full_name='pahiri_buffer.PashiriInfo',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='pashiri_index', full_name='PashiriInfo.pashiri_index', index=0,
+      name='pashiri_index', full_name='pahiri_buffer.PashiriInfo.pashiri_index', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='pashiri_number', full_name='PashiriInfo.pashiri_number', index=1,
+      name='pashiri_number', full_name='pahiri_buffer.PashiriInfo.pashiri_number', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -58,41 +58,41 @@ _PASHIRIINFO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=17,
-  serialized_end=77,
+  serialized_start=32,
+  serialized_end=92,
 )
 
 
 _PASHIRITASKINFO = _descriptor.Descriptor(
   name='PashiriTaskInfo',
-  full_name='PashiriTaskInfo',
+  full_name='pahiri_buffer.PashiriTaskInfo',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='exchange', full_name='PashiriTaskInfo.exchange', index=0,
+      name='exchange', full_name='pahiri_buffer.PashiriTaskInfo.exchange', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='symbol', full_name='PashiriTaskInfo.symbol', index=1,
+      name='symbol', full_name='pahiri_buffer.PashiriTaskInfo.symbol', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='base', full_name='PashiriTaskInfo.base', index=2,
+      name='base', full_name='pahiri_buffer.PashiriTaskInfo.base', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='quote', full_name='PashiriTaskInfo.quote', index=3,
+      name='quote', full_name='pahiri_buffer.PashiriTaskInfo.quote', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -110,8 +110,8 @@ _PASHIRITASKINFO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=79,
-  serialized_end=159,
+  serialized_start=94,
+  serialized_end=174,
 )
 
 DESCRIPTOR.message_types_by_name['PashiriInfo'] = _PASHIRIINFO
@@ -121,14 +121,14 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 PashiriInfo = _reflection.GeneratedProtocolMessageType('PashiriInfo', (_message.Message,), dict(
   DESCRIPTOR = _PASHIRIINFO,
   __module__ = 'pashiri_pb2'
-  # @@protoc_insertion_point(class_scope:PashiriInfo)
+  # @@protoc_insertion_point(class_scope:pahiri_buffer.PashiriInfo)
   ))
 _sym_db.RegisterMessage(PashiriInfo)
 
 PashiriTaskInfo = _reflection.GeneratedProtocolMessageType('PashiriTaskInfo', (_message.Message,), dict(
   DESCRIPTOR = _PASHIRITASKINFO,
   __module__ = 'pashiri_pb2'
-  # @@protoc_insertion_point(class_scope:PashiriTaskInfo)
+  # @@protoc_insertion_point(class_scope:pahiri_buffer.PashiriTaskInfo)
   ))
 _sym_db.RegisterMessage(PashiriTaskInfo)
 
@@ -136,16 +136,16 @@ _sym_db.RegisterMessage(PashiriTaskInfo)
 
 _PASHIRIMANAGER = _descriptor.ServiceDescriptor(
   name='PashiriManager',
-  full_name='PashiriManager',
+  full_name='pahiri_buffer.PashiriManager',
   file=DESCRIPTOR,
   index=0,
   options=None,
-  serialized_start=161,
-  serialized_end=225,
+  serialized_start=176,
+  serialized_end=268,
   methods=[
   _descriptor.MethodDescriptor(
     name='AssignTask',
-    full_name='PashiriManager.AssignTask',
+    full_name='pahiri_buffer.PashiriManager.AssignTask',
     index=0,
     containing_service=None,
     input_type=_PASHIRIINFO,
